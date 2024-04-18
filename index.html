@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<nav>
+    
+  </nav>
+<!--FAWSOME Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h3 style="text-align: center;">Portfolio Site</h3>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id= "nav">
+  <div class="container-fluid">
+    <i class="fa-solid fa-house" style="padding-right: 0.5rem;"></i>
+   
+    <a class="navbar-brand" href="#" style="padding-right: 0.75rem;">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <br>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <i id = "icon" class="fa-brands fa-linkedin" style="padding-top: 0.75rem;"></i>
+        <li class="nav-item ">
+          <a href="https://linuxhint.com/author/umarhassan/" target = "blank" class="nav-link active" style="padding-right: 2rem;"> 
+            Linkedin
+          </a>
+          
+        </li>
+        
+        <i class="fa-brands fa-github" style="padding-top: 0.75rem;"></i>
+        <li class="nav-item ">
+          <a href="https://github.com/UmarHassan88/" class="nav-link active" style="padding-right: 2rem;"> 
+            Github
+          </a>
+          
+        </li>
+      
+      <i class="fa-solid fa-phone" style="padding-top: 0.75rem;"></i>
+      <li class="nav-item">
+
+          <a class="nav-link active" aria-current="page" href="#" onclick="redirectAbout()">Contact Us</a>
+        </li>
+
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" id = "se" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" onclick="Searchfunction()">Search</button>
+        <div id="searchResults"></div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Bio
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>A Front End Developer with a keen interest in developing web applications and sites using 
+        interacative elements considering the UX and UI elements from the user's perspective.</strong> 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Portfolio Link
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong><a href="https://linuxhint.com/author/umarhassan">Redirect Link</a></strong> 
+      </div>
+    </div>
+  </div>
+  
+<!--Carousel-->
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="height: 700px " >
+      <img src="F:\MY BASIC DOCS\MyPIC.jpg" class="d-block w-100"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="F:\IPHONE 6 STUFF\CEOV8168.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<br>
+<h2 style= "text-align: center; background-color: lightblue;" id = "te">Achievements</h2>
+<br>
+<h3 style= "text-align: center; background-color: seagreen;">Portfolio</h3>
+
+<iframe src="https://linuxhint.com/author/umarhassan" width="100%" height="300" style="border:1px solid black;">
+</iframe>
+<code>var a = "JS"</code>
+<br>
+<i>This is Umar</i>
+<br>
+<sub>Subscript</sub>
+<br>
+<aside>This is aside data</aside>
+<br>
+<br>
+<br>
+<footer style="text-align: center; background-color: lightgray;">
+<h6>
+  Umar Hassan Site 
+  <br>
+  All Rights Reserved.
+  <br>
+  Copyright &#169; 2024
+</h6>
+</footer>
+
+</body>
+<script src = "index.js" type="text/javascript">
+	
+	
+</script>
+</html>

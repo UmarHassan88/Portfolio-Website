@@ -1,0 +1,55 @@
+@media screen and (width > 400px){
+		
+    h3{
+        background-color: dimgray;
+    
+        }
+    
+    footer{
+        text-decoration: bold;
+        border-radius: 4rem;
+    
+        background-color: black;
+        text-size-adjust: 2rem;
+    
+        }
+    
+    .nav{
+        background-color: black;
+    
+        }
+    }
+    
+    @media screen and (width < 400px), screen and (orientation: portrait){
+            
+    h3{
+        background-color: lightblue;
+    
+        }
+    footer{
+        border-radius: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    
+        }
+    }
+    
+    @media not all and (orientation: landscape){
+            
+    h3{
+        background-color: darkgray;
+    
+        }
+    footer{
+        margin: 2rem;
+    
+        }
+    }
+    
+    @media screen and (max-width: 400px){
+        div > ul > li {
+         display: none;
+         border-top: 2rem;
+        }
+    
+        }
